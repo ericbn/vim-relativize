@@ -19,11 +19,11 @@ Add one of the following to your `.vimrc` depending on the initial look you want
 
 - Relative line numbers when you need them (recommended)
 
-      set relativenumber
+        set relativenumber
 
 - Absolute line numbers all the time
 
-      set number
+        set number
 
 - No numbers at all
 
