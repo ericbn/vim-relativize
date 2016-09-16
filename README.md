@@ -15,17 +15,31 @@ Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ## Configuration
 
-If you temporarily only want to have the absolute numbers, you can disable/enable relative line numbers with `:RelativizeToggle`. To map a key (e.g. <kbd>F2</kbd>) to this command, add the following to your `.vimrc`:
+Add one of the following to your `.vimrc` depending on the initial look you want:
+
+- Relative line numbers when you need them (recommended)
+
+      set relativenumber
+
+- Absolute line numbers all the time
+
+      set number
+
+- No numbers at all
+
+  (nothing)
+
+You can enable/disable relative line numbers with `:RelativizeToggle`. To map a key (e.g. <kbd>F2</kbd>) to this command, add the following to your `.vimrc`:
 
     nnoremap <silent> <F2> :RelativizeToggle<CR>
 
-To start with relative line numbers disabled, add this to your `.vimrc`:
+To map a key (e.g. <kbd>F3</kbd>) to switch the numbers from appearing or not at all, add this to your `.vimrc`:
 
-    let g:relativize_enabled=0
+    nnoremap <silent> <F3> :exec "set" g:relativize_enabled ? "relativenumber!" : "number!"<CR>
 
 ## Why another 'relativenumber' plugin?
 
-This is a no-nonsense plugin with only 32 lines of code. I believe this is how a plugin for such a simple feature should be.
+This is a no-nonsense plugin with only 31 lines of code. I believe this is how a plugin for such a simple feature should be.
 
 If you want a plugin with more configuration options, try [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle), [numbers.vim](https://github.com/myusuf3/numbers.vim),  [vim-relativity](https://github.com/kennykaye/vim-relativity), [vim-autonumber](https://github.com/foriequal0/vim-autonumber), [RelativeNumberCurrentWindow](https://github.com/vim-scripts/RelativeNumberCurrentWindow) or [smartnumber.vim](https://github.com/mopp/smartnumber.vim).
 

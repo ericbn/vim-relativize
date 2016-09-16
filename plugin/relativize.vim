@@ -4,7 +4,7 @@ endif
 let g:loaded_relativize = 1
 
 if !exists('g:relativize_enabled')
-  let g:relativize_enabled = 1
+  let g:relativize_enabled = !&number
 endif
 
 function! s:set_relativenumber(rnu)
@@ -34,5 +34,3 @@ autocmd WinEnter * call s:set_relativenumber(1)
 autocmd WinLeave * call s:set_relativenumber(0)
 
 command! -bar RelativizeToggle :call s:toggle()
-
-set number
