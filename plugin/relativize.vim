@@ -3,9 +3,7 @@ if exists('g:loaded_relativize') || &compatible || v:version < 703
 endif
 let g:loaded_relativize = 1
 
-if !exists('g:relativize_enabled')
-  let g:relativize_enabled = !&number
-endif
+let g:relativize_enabled = !&number
 
 function! s:set_relativenumber(rnu)
   if g:relativize_enabled && (&number || &relativenumber)

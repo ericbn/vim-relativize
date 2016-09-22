@@ -4,28 +4,28 @@ This plugin only shows relative line numbers when you need them: in the current 
 
 ## Installation
 
-Using [pathogen.vim](https://github.com/tpope/vim-pathogen):
+- Using [pathogen.vim](https://github.com/tpope/vim-pathogen):
 
-    cd ~/.vim/bundle
-    git clone git://github.com/ericbn/vim-relativize.git
+        cd ~/.vim/bundle
+        git clone git://github.com/ericbn/vim-relativize.git
 
-Using [vim-plug](https://github.com/junegunn/vim-plug):
+- Using [vim-plug](https://github.com/junegunn/vim-plug):
 
-    Plug 'ericbn/vim-relativize'
+        Plug 'ericbn/vim-relativize'
 
 ## Configuration
 
 Add one of the following to your `.vimrc` depending on the initial look you want:
 
-- Relative line numbers when you need them (recommended)
+- Relative line numbers when you need them (recommended):
 
         set relativenumber
 
-- Absolute line numbers all the time
+- Absolute line numbers all the time (toggle to relative numbers when you need them with `:RelativizeToggle`):
 
         set number
 
-- No numbers at all
+- No numbers at all (use the map bellow to switch numbers from appearing, will first switch to relative line numbers):
 
   (nothing)
 
@@ -39,7 +39,7 @@ To map a key (e.g. <kbd>F3</kbd>) to switch the numbers from appearing or not at
 
 ## Why another 'relativenumber' plugin?
 
-This is a no-nonsense plugin with only 31 lines of code. I believe this is how a plugin for such a simple feature should be.
+This is a no-nonsense plugin with only 29 lines of code. I believe this is how a plugin for such a simple feature should be.
 
 If you want a plugin with more configuration options, try [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle), [numbers.vim](https://github.com/myusuf3/numbers.vim),  [vim-relativity](https://github.com/kennykaye/vim-relativity), [vim-autonumber](https://github.com/foriequal0/vim-autonumber), [RelativeNumberCurrentWindow](https://github.com/vim-scripts/RelativeNumberCurrentWindow) or [smartnumber.vim](https://github.com/mopp/smartnumber.vim).
 
