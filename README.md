@@ -29,7 +29,7 @@ Add one of the following to your `.vimrc` depending on the initial look you want
 
   (nothing)
 
-You can enable/disable relative line numbers with `:RelativizeToggle`. To map a key (e.g. <kbd>F2</kbd>) to this command, add the following to your `.vimrc`:
+You can toggle between relative and absolute line numbers with `:RelativizeToggle`. To map a key (e.g. <kbd>F2</kbd>) to this command, add the following to your `.vimrc`:
 
     nnoremap <silent> <F2> :RelativizeToggle<CR>
 
