@@ -30,7 +30,7 @@ Add one of the following to your `.vimrc` depending on the initial look you want
 
         set number
 
-- No numbers at all (use the map bellow to switch numbers from appearing, will first switch to absolute line numbers):
+- No numbers at all (use the map below to switch numbers from appearing, will first switch to absolute line numbers):
 
   (nothing)
 
@@ -41,7 +41,8 @@ You can toggle relative line numbers from appearing with `:RelativizeToggle`. To
 To map a key (e.g. <kbd>F3</kbd>) to switch the numbers from appearing or not at all, add this to your `.vimrc`:
 
     nnoremap <silent> <F3> :let [&number, &relativenumber] =
-      \ [!&number && (g:relativize_with_number \|\| !g:relativize_enabled), !&relativenumber && g:relativize_enabled]<CR>
+      \ [!&number && (g:relativize_with_number \|\| !g:relativize_enabled),
+      \ !&relativenumber && g:relativize_enabled]<CR>
 
 ## Why another 'relativenumber' plugin?
 
