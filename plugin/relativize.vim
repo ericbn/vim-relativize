@@ -23,13 +23,17 @@ function! s:toggle()
   endif
 endfunction
 
-autocmd BufWinEnter * call s:set_numbers(1)
-autocmd BufWinLeave * call s:set_numbers(0)
-autocmd FocusGained * call s:set_numbers(1)
-autocmd FocusLost * call s:set_numbers(0)
-autocmd InsertEnter * call s:set_numbers(0)
-autocmd InsertLeave * call s:set_numbers(1)
-autocmd WinEnter * call s:set_numbers(1)
-autocmd WinLeave * call s:set_numbers(0)
+augroup relativize
+  autocmd!
+  autocmd BufWinEnter * call s:set_numbers(1)
+  autocmd BufWinLeave * call s:set_numbers(0)
+  autocmd FocusGained * call s:set_numbers(1)
+  autocmd FocusLost * call s:set_numbers(0)
+  autocmd InsertEnter * call s:set_numbers(0)
+  autocmd InsertLeave * call s:set_numbers(1)
+  autocmd WinEnter * call s:set_numbers(1)
+  autocmd WinLeave * call s:set_numbers(0)
+augroup END
 
 command! -bar RelativizeToggle :call s:toggle()
+" vim: et sw=2 sts=2 ts=2
