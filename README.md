@@ -56,7 +56,7 @@ at all, add this to your `.vimrc`:
 
 ## Why another 'relativenumber' plugin?
 
-This is a no-nonsense plugin with only 33 lines of code. I believe this is how
+This is a no-nonsense plugin with only 27 lines of code. I believe this is how
 a plugin for such a simple feature should be. It is flexible, and plays well
 with other plugins without the need for extra configuration options.
 
