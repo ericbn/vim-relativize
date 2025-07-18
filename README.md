@@ -1,5 +1,11 @@
 # relativize.vim
 
+> [!NOTE]  
+> Since its version 2.0, the original
+> [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle) by
+> Jeff Kreeftmeijer became even simper than this plugin. It's a great example of
+> a project being refactored! Use it instead.
+
 This plugin only shows relative line numbers when you need them: in the current
 window, and if you're not in insert mode. Otherwise, it will give you the
 absolute numbers. As suggested by [Jeff
@@ -61,7 +67,6 @@ a plugin for such a simple feature should be. It is flexible, and plays well
 with other plugins without the need for extra configuration options.
 
 If you want a plugin that needs more configuration options, try
-[numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle),
 [numbers.vim](https://github.com/myusuf3/numbers.vim),
 [vim-relativity](https://github.com/kennykaye/vim-relativity),
 [vim-autonumber](https://github.com/foriequal0/vim-autonumber),
